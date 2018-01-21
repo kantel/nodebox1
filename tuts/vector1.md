@@ -1,9 +1,9 @@
-# Eine Vektor-Klasse für die Tropfenschachtel
+# Eine Vektor-Klasse für die Knotenschachtel
 
 *»Roger, Roger. What's our vector, Victor?«*  
 -- Captain Oveur (Airplane)
 
-Mit diesem Tutorial möchte ich beginnen, die aus [Processing](http://cognitiones.kantel-chaos-team.de/programmierung/creativecoding/processing/processing.html) bekannte Klasse **[PVector](https://www.processing.org/reference/PVector.html)** in [NodeBox 1](http://cognitiones.kantel-chaos-team.de/programmierung/creativecoding/nodebox/nodebox.html) (und zwar in der Fork von *Karsten Wolf*) zu implementieren.[^vec11] Ich weiß, Karsten hat mit viel Mühe *numpy* in die Tropfenschachtel eingebaut, aber das ist eher eine (riesige) Matrix-Bibliothek, die auch Vektoren kann. Für einfache Vektorrechnungen, wie sie bei simplen Animationen und Simulationen vorkommen, halte ich sie für *Overkill*.
+Mit diesem Tutorial möchte ich beginnen, die aus [Processing](http://cognitiones.kantel-chaos-team.de/programmierung/creativecoding/processing/processing.html) bekannte Klasse **[PVector](https://www.processing.org/reference/PVector.html)** in [NodeBox 1](http://cognitiones.kantel-chaos-team.de/programmierung/creativecoding/nodebox/nodebox.html) (und zwar in der Fork von *Karsten Wolf*) zu implementieren.[^vec11] Ich weiß, Karsten hat mit viel Mühe *numpy* in die Knotenschachtel eingebaut, aber das ist eher eine (riesige) Matrix-Bibliothek, die auch Vektoren kann. Für einfache Vektorrechnungen, wie sie bei simplen Animationen und Simulationen vorkommen, halte ich sie für *Overkill*.
 
 [^vec11]: Processing kann nicht nur 2D, sondern auch 3D. Daher kann die Klasse PVector in Processing sowohl mit zweidimensionalen wie auch mit dreidimensionalen Vektoren umgehen. Da die NodeBox aber eher ein 2D-Programm ist, habe ich in meiner Implementierung der PVector-Klasse auf 3D verzichtet.
 
@@ -302,7 +302,7 @@ class PVector():
             self.div(m)
 ~~~
 
-Das Modul müßt ihr irgendwohin packen, wo es die Tropfenschachtel auch findet, also am besten in das gleiche Verzeichnis wie Euer Programm oder in das Bibliotheksverzeichnis.
+Das Modul müßt ihr irgendwohin packen, wo es die Knotenschachtel auch findet, also am besten in das gleiche Verzeichnis wie Euer Programm oder in das Bibliotheksverzeichnis.
 
 Das letzte Programm für heute sieht dann so aus:
 
