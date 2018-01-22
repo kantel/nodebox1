@@ -44,7 +44,7 @@ class PVector():
         self.y *= v.y
 
     # Elementweise Division eines Vektor mit einem anderen Vektor
-    def mult2(self, v):
+    def div2(self, v):
         self.x /= v.x
         self.y /= v.y
 
@@ -75,7 +75,7 @@ class PVector():
     # Begrenzt die Magnitude eines Vektors auf max
     def limit(self, max):
         if self.mag() > max:
-            self. normalize()
+            self.normalize()
             self.mult(max)
     
     # Berechnet den Winkel der Rotation eines Vektors
