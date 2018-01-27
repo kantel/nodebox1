@@ -17,4 +17,4 @@ text(frog_j, 20, 130)
 
 font("Garamond-Bold", 14)
 lineheight(1.6)
-text(frog_d, 100, 116)
+text(frog_d, 110, 116)
