@@ -48,12 +48,12 @@ def draw():
     rect(0, 0, WIDTH, HEIGHT)
     
     fill(0, 0.9, 0)
-    for i in range(len(ants1)):
-        ants1[i].wandering()
-        oval(ants1[i].x, ants1[i].y, ants1[i].size, ants1[i].size)
+    for ant in ants1:
+        ant.wandering()
+        oval(ant.x, ant.y, ant.size, ant.size)
     
     fill(0.7, 0, 0)
-    for j in range(len(ants2)):
-        ants2[j].wandering()
-        oval(ants2[j].x, ants2[j].y, ants2[j].size, ants2[j].size)
+    for ant in ants2:
+        ant.wandering()
+        oval(ant.x, ant.y, ant.size, ant.size)
         
