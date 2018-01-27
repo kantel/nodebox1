@@ -1,4 +1,4 @@
-size(600, 600)
+size(500, 500)
 
 class Creature:
     
@@ -11,7 +11,7 @@ class Creature:
         self._vx = 0
         self._vy = 0
         
-    def wandering(self):
+    def wander(self):
         v = self.speed
         self._vx += random(-v, v)
         self._vy += random(-v, v)
@@ -49,11 +49,11 @@ def draw():
     
     fill(0, 0.9, 0)
     for ant in ants1:
-        ant.wandering()
+        ant.wander()
         oval(ant.x, ant.y, ant.size, ant.size)
     
     fill(0.7, 0, 0)
     for ant in ants2:
-        ant.wandering()
+        ant.wander()
         oval(ant.x, ant.y, ant.size, ant.size)
         
