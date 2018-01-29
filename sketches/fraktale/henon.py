@@ -23,19 +23,19 @@ for j in range(50):
             x1 = x*cosa - (y - x*x)*sina
             y = x*sina + (y - x*x)*cosa
             x = x1
-            if (abs(x + 1.3) < 3) and (abs(1.3 - y) < 3):
-                p = (x + 1.3)*180
-                q = (1.3 - y)*180
-                if (i < 800):
-                    fill(0.9, 0, 0)
-                elif (i < 1200):
-                    fill(0, 0.9, 0)
-                else:
-                    fill(0, 0, 0.9)
-                oval(p, q, 2, 2)
+            p = (x + 1.25)*180
+            q = (1.4 - y)*180
+            if (i < 800):
+                fill(0.9, 0, 0)
+            elif (i < 1200):
+                fill(0, 0.9, 0)
+            else:
+                fill(0, 0, 0.9)
+            oval(p, q, 2, 2)
     x = x0 + j*h
     y = y0 + j*h
 
 fill(0)
 fontsize(14)
-text("Quadratische Henon-Gleichung für a = 1.5732", 20, WIDTH - 20)
+msg = "Quadratische Henon-Gleichung für a = {}".format(a)
+text(msg, 20, WIDTH - 20)
