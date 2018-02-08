@@ -22,6 +22,17 @@ del(fruits[fruits.index("Apple")])
 for i in range(len(fruits)):
     text(fruits[i], 25 + i*75, 75)
 
+#--------------------------------------------------------
+
+fruits = ["Apple", "Tomato", "Banana", "Orange", "Lemon"]
+for i in range(len(fruits)-1, 0, -1):
+    if fruits[i] == "Banana":
+        fruits.pop(i)
+
+for i in range(len(fruits)):
+    print(fruits[i])
+
+#---------------------------------------------------------
 
 fruits2 = [u"🍏", u"🍅", u"🍌", u"🍊", u"🍋"]
 for i in range(len(fruits2)):
