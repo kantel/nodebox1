@@ -16,7 +16,6 @@ class Particle(object):
     def update(self):
         self.velocity.add(self.acceleration)
         self.location.add(self.velocity)
-        self.lifespan -= random(0.5, 1.5)
     
     def display(self):
         stroke(0.0, 0.0, 0.0)
