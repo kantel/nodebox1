@@ -1,6 +1,6 @@
 coreimage = ximport("coreimage")
 
-size(150, 150)
+size(500, 500)
 
 canvas = coreimage.canvas(WIDTH, HEIGHT)
 
@@ -15,7 +15,8 @@ def mandelbrot(x, y, depth = 64):
     return(0)
 
 pixels = []
-w = h = 150
+w = WIDTH
+h = HEIGHT
 
 for i in range(w):
     for j in range(h):
