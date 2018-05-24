@@ -1,5 +1,6 @@
 # coding=utf-8
 from pvector import PVector
+# colormode(RGB, range = 255)
 
 class Particle(object):
     
@@ -16,11 +17,12 @@ class Particle(object):
     def update(self):
         self.velocity.add(self.acceleration)
         self.location.add(self.velocity)
+        self.lifespan -= 2.0
     
     def display(self):
-        stroke(0.0, 0.0, 0.0)
-        fill(1.0, 0.0, 0.0)
-        ellipse(self.location.x, self.location.y, 20, 20)
+        stroke(0, 0, 0)
+        fill(255, 0, 0)
+        circle(self.location.x, self.location.y, 20)
         
     def isDead(self):
         if self.lifespan <= 0:
