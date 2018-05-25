@@ -4,7 +4,7 @@
 
 size(500, 500)
 speed(30)
-colormode(RGB, range=255)
+colormode(RGB)
 
 from pvector import PVector
 
@@ -16,7 +16,7 @@ class Particle(object):
         self.acceleration = PVector(0, 0.05)
         self.velocity = PVector(random(-1.5, 1.5), random(-2.0, 2.0))
         self.location = l.get()
-        self.lifespan = 1.0
+        self.lifespan = 255
     
     def run(self):
         self.update()
@@ -25,9 +25,10 @@ class Particle(object):
     def update(self):
         self.velocity.add(self.acceleration)
         self.location.add(self.velocity)
-        self.lifespan -= 0.0085
+        self.lifespan -= 2
     
     def display(self):
+        colorrange(255)
         stroke(0, 0, 0)
         fill(255, 140, 0, self.lifespan)
         ellipse(self.location.x, self.location.y, 20, 20)
