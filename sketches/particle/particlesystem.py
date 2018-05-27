@@ -2,7 +2,7 @@
 # Nach dem Processing (Java) Sketch von Daniel Shiffmann
 # aus: The Nature of Code, o.O. 2012, Seite 149ff
 
-size(500, 500)
+size(560, 315)
 speed(30)
 colormode(RGB)
 
