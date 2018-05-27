@@ -55,4 +55,5 @@ def draw():
         particles[i].run()
         if particles[i].isDead():
             particles.pop(i)
-            print(len(particles))
+            # print(len(particles))
+
