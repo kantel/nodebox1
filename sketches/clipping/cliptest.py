@@ -1,0 +1,6 @@
+size(400, 400)
+background(0.3)
+p = oval(20, 20, 360, 360, draw=False)
+beginclip(p)
+image("assets/aliceherzogin.jpg", 0, -40)
+endclip()
